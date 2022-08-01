@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace AnimailRescue
 {
-    internal class Animal
+    internal abstract class Animal
     {
-        private string name;
-        private int age;
-        private int health;
-        private int hunger;
-        private int happiness;
-        private string favoriteFood;
-        private string favoriteActivity;
+        protected string name;
+        protected int age;
+        protected int health;
+        protected int hunger;
+        protected int happiness;
+        protected string favoriteFood;
+        protected string favoriteActivity;
 
         public Animal(string name, int age, int health, int hunger, int happiness, string favoriteFood, string favoriteActivity)
         {
@@ -105,6 +105,9 @@ namespace AnimailRescue
                 this.hunger + ", Happiness: " + this.happiness + ", Favorite food: " +this.favoriteFood +
                 ", Favorite Activity: " + this.favoriteActivity;
         }
+
+        public abstract string speak();
+   
 
     }
 }

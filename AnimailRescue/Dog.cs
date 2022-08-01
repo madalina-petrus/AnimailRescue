@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AnimailRescue
 {
     
-    internal class Dog:Animal
+    internal class Dog : Animal
     {
         private string favoriteHuman;
 
@@ -16,6 +16,7 @@ namespace AnimailRescue
             this.favoriteHuman= favoriteHuman;
         }
 
+  
         public string GetFavoriteHuman()
         {
             return this.favoriteHuman;
@@ -25,7 +26,7 @@ namespace AnimailRescue
             this.favoriteHuman = favoriteHuman;
         }
 
-        public string bark()
+        public override string speak()
         {
             return "HamHam";
         }

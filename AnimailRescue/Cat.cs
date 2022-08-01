@@ -25,7 +25,7 @@ namespace AnimailRescue
             this.theHatedPerson = theHatedPerson;
         }
 
-        public string meow()
+        public override string speak()
         {
             return "MiauMiau";
         }
