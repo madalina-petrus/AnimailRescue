@@ -23,7 +23,17 @@ public class App
         Console.WriteLine(veterinarian.toString());
 
         Console.WriteLine(game.toString());
+        Console.WriteLine();
+        Dog dog = new Dog("Boby", 3, 8, 4, 9, "chicken", "ball", "Madalina");
+        dog.SetFavoriteActivity("run");
+        Console.WriteLine(dog.toString());
+        Console.WriteLine(dog.bark());
 
+        Console.WriteLine();
+        Cat cat = new Cat("Kitty", 3, 8, 4, 9, "chicken", "ball", "Sam");
+        cat.SetFavoriteFood("fish");
+        Console.WriteLine(cat.toString());
+        Console.WriteLine(cat.meow());
 
     }
 }
