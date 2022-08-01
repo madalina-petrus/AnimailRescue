@@ -16,5 +16,31 @@ namespace AnimailRescue
             this.name = name;
             this.specialization = specialization;
         }
+
+        public string GetName()
+        {
+            return this.name;
+        }
+
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
+
+        public string GetSpecialization()
+        {
+            return this.specialization;
+        }
+
+        public void SetSpecialization(string specialization)
+        {
+            this.specialization = specialization;
+        }
+
+
+        public string toString()
+        {
+            return "Name: " + this.name + ", Specialization: " + this.specialization;
+        }
     }
 }

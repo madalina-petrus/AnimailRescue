@@ -26,7 +26,85 @@ namespace AnimailRescue
             this.favoriteFood = favoriteFood;
             this.favoriteActivity = favoriteActivity;
         }
+        
+        public string GetName()
+        {
+            return this.name;
+        }
 
-       
+        public void SetName(string name)
+        {
+            this.name=name;
+        }
+
+        public int GetAge()
+        {
+            return this.age;
+        }
+
+        public void SetAge(int age)
+        {
+            this.age = age;
+        }
+
+        public int GetHealth()
+        {
+            return this.health;
+        }
+
+        public void SetHealth(int health)
+        {
+            this.health = health;
+        }
+
+        public int GetHunger()
+        {
+            return this.hunger;
+        }
+
+        public void SetHunger(int age)
+        {
+            this.age = age;
+        }
+
+        public int GetHappiness()
+        {
+            return this.happiness;
+        }
+
+        public void SetHappiness(int happiness)
+        {
+            this.happiness = happiness;
+        }
+
+        public string GetFavoriteFood()
+        {
+            return this.favoriteFood;
+        }
+
+        public void SetFavoriteFood(string favoriteFood)
+        {
+            this.favoriteFood = favoriteFood;
+        }
+
+        public string GetFavoriteActivity()
+        {
+            return this.favoriteActivity;
+        }
+
+        public void SetFavoriteActivity(string favoriteActivity)
+        {
+            this.favoriteActivity = favoriteActivity;
+        }
+        
+
+
+        public string toString()
+        {
+           return "Name: " + this.name + ", Age: " + this.age + ", Health: " + this.health + ", Hunger: " +
+                this.hunger + ", Happiness: " + this.happiness + ", Favorite food: " +this.favoriteFood +
+                ", Favorite Activity: " + this.favoriteActivity;
+        }
+
     }
 }

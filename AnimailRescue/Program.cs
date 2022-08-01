@@ -11,5 +11,19 @@ public class App
         Veterinarian veterinarian = new Veterinarian("Bob", "dogs");
         Game game = new Game(adopter, animal, veterinarian);
 
+        animal.SetName("rex");
+        Console.WriteLine(animal.toString());
+
+        Console.WriteLine(adopter.toString());
+
+        Console.WriteLine(food.toString());
+
+        Console.WriteLine(activity.toString());
+
+        Console.WriteLine(veterinarian.toString());
+
+        Console.WriteLine(game.toString());
+
+
     }
 }
